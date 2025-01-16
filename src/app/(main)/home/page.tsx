@@ -1,10 +1,11 @@
+import Home from '@/components/pages/Home'
 import React from 'react'
 
 function page() {
   return (
-    <div>
-       
-    </div>
+    <>
+      <Home/>
+    </>
   )
 }
 

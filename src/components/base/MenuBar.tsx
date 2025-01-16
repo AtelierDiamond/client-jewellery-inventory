@@ -14,7 +14,7 @@ function MenuBar() {
             id: "Home",
             icon: <FaHome />,
             title: "HOME",
-            link: "/",
+            link: "/home",
         },
         {
             id: "Contact",
