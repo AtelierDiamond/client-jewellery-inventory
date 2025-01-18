@@ -1,14 +1,35 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import img1 from "@/components/images/categories/ring.png";
 import img2 from "@/components/images/categories/bracelet.png";
 import img3 from "@/components/images/categories/earring.png";
 import img4 from "@/components/images/categories/necklace.png";
 import img5 from "@/components/images/categories/pendant.png";
 import Image from "next/image";
+import "@fontsource-variable/montserrat";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 function Home() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
+
   const categoryImages = [
+    { img: img1, alt: "Ring" },
+    { img: img2, alt: "Bracelet" },
+    { img: img3, alt: "Earring" },
+    { img: img4, alt: "Necklace" },
+    { img: img5, alt: "Pendant" },
     { img: img1, alt: "Ring" },
     { img: img2, alt: "Bracelet" },
     { img: img3, alt: "Earring" },
@@ -18,42 +39,41 @@ function Home() {
 
   return (
     <div className="">
-      <div className="w-full mb-2">
+      <div className="w-[100vw] h-[380px] mb-2">
         <video
-          className="w-full max-h-[350px] shadow-lg"
-          controls
-          autoPlay
-          muted
-          loop
+          className="w-full h-full border block object-fill"
+          width="100vw"
+          autoPlay={true}
         >
-          <source src="\src\components\images\video\video.mp4" type="video/mp4" />
+          <source src='https://media-hosting.imagekit.io//5345e8d45d4f48fd/uri_ifs___V_qI7b9jpU4vQggmlFKbeWOJnsAS8gMGRYNc6NPaQOhag%20-%20ROTATE%20-%20Videobolt.net.mp4?Expires=1831720461&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=La-2xvl7Z8omETg9Yk3OrmF12yPlktYcyEdbprz~ifJ5exkJImRqH~Xvctwlomm9LeRJdL~CBMgnaoSCzlmgs3atPBn-Sr7uOv6J2nX75G8Z2lZCgbh5IDcLB3~swf2RaQe3SoblmDd6G~EdIUt2YPZGmsyL3SlqXog0VGhyGoEgqPv4ESD47-hwOq9lE-IotcJkdwleK3Pule~iUFH6cyKCS3SET2r4HydRqzjm1oJS9UOju5HkbuDhmdX0-4iO0PvlXw-R4ZoEoqhq7w1L7YLd-BpGN2H1pQUy6nRjna546vfjAr3MGY6h8ZOWB-1nqm1TbFHpWc9OTI~kmOJXqg__'  />
         </video>
       </div>
-      <div className="p-6">
+      <div className="p-6 bg-white">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-3xl font-normal text-black">Categories</h2>
+          <h2 className="text-3xl font-normal text-black font-montserrat">Categories</h2>
           <div className="flex gap-2">
-            <button className="w-8 h-8 rounded-md bg-[#B7A99A] text-white flex items-center justify-center hover:bg-[#9c8c7a]">
-              &lt;
+            <button onClick={scrollLeft} className="w-10 h-8 rounded-md bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black">
+            <MdKeyboardArrowLeft size={25} />
             </button>
-            <button className="w-8 h-8 rounded-md bg-[#B7A99A] text-white flex items-center justify-center hover:bg-[#9c8c7a]">
-              &gt;
+            <button onClick={scrollRight} className="w-10 h-8 rounded-md bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black">
+            <MdKeyboardArrowRight size={25} />
             </button>
           </div>
         </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-          {categoryImages.map((image, index) => (
+        <div ref={scrollRef} className="flex justify-center items-center space-x-5 overflow-auto">
+          {categoryImages.map((image:any, index:number) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow-md p-4 hover:shadow-lg transition duration-200"
+              className="flex flex-col items-center bg-[#EBE5DF] rounded-lg shadow-md p-4 hover:shadow-lg transition duration-200"
             >
               <Image
                 src={image.img}
                 alt={image.alt}
-                className="w-24 h-24 md:w-32 md:h-32 object-contain rounded-md"
+                className="rounded-md"
+                height={100}
+                width={100}
               />
-              <p className="text-center text-sm font-medium text-gray-700 mt-4">
+              <p className="text-center text-md font-medium font-montserrat text-gray-700 mt-4">
                 {image.alt}
               </p>
             </div>
