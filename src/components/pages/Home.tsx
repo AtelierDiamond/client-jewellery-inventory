@@ -41,7 +41,7 @@ function Home() {
     <div className="">
       <div className="w-[100vw] h-[380px] mb-2">
         <video
-          className="w-full h-full border block object-fill"
+          className="w-full h-full block object-fill"
           width="100vw"
           autoPlay={true}
         >
