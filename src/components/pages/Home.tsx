@@ -61,7 +61,7 @@ function Home() {
           </div>
         </div>
         <div ref={scrollRef} className="flex justify-center items-center space-x-5 overflow-auto">
-          {categoryImages.map((image:any, index:number) => (
+          {categoryImages.map((image, index:number) => (
             <div
               key={index}
               className="flex flex-col items-center bg-[#EBE5DF] rounded-lg shadow-md p-4 hover:shadow-lg transition duration-200"

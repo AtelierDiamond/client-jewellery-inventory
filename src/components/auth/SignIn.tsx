@@ -71,7 +71,7 @@ function Login() {
                             </div>
                         </form>
                         <hr className="mt-5 mb-2 border-t border-gray-300" />
-                        <p className='text-center'>Doesn't have an account Sign Up</p>
+                        <p className='text-center'>Doesn&apos;t have an account Sign Up</p>
                     </div>
                 </div>
             </div>
