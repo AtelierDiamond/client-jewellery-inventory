@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import React from 'react';
-import { FaHome } from "react-icons/fa";
+import { FaFolder, FaHome } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { BsFillQuestionSquareFill } from "react-icons/bs";
 
@@ -15,6 +15,12 @@ function MenuBar() {
             icon: <FaHome />,
             title: "HOME",
             link: "/home",
+        },
+        {
+            id: "Collection",
+            icon: <FaFolder />,
+            title: "COLLECTION",
+            link: "/collection",
         },
         {
             id: "Contact",

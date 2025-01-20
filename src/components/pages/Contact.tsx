@@ -4,7 +4,7 @@ import "@fontsource-variable/montserrat";
 
 function Contact() {
     return (
-        <div className='flex justify-center items-center bg-[#e8ecef] '>
+        <div className='flex justify-center items-center bg-[#e8ecef] min-h-screen'>
             <div className='w-full p-10'>
                 <h2 className='text-2xl font-normal text-black my-6 font-montserrat'>Contact Information</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
