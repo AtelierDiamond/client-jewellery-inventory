@@ -2,11 +2,11 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import ring from "@/components/images/categories/ring.png";
-import bracelet from "@/components/images/categories/bracelet.png";
-import earring from "@/components/images/categories/earring.png";
-import necklace from "@/components/images/categories/necklace.png";
-import pendant from "@/components/images/categories/pendant.png";
+import ring from "@/components/images/categories/ring.jpg";
+import bracelet from "@/components/images/categories/bracelet.jpg";
+import earring from "@/components/images/categories/earring.jpg";
+import necklace from "@/components/images/categories/necklace.jpg";
+import pendant from "@/components/images/categories/pendant.jpg";
 import Link from "next/link";
 
 function JewellsCategory() {
@@ -38,7 +38,7 @@ function JewellsCategory() {
   ];
 
   return (
-    <div className="p-6 bg-white">
+    <div className="p-6 bg-white ">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl font-normal text-black font-montserrat">
           Categories
@@ -68,7 +68,7 @@ function JewellsCategory() {
             key={index}
             className="flex flex-col items-center bg-[#EBE5DF] rounded-2xl shadow-md p-3 hover:shadow-lg transition duration-200"
           >
-            <div className="min-h-[180px] min-w-[200px] relative">
+            <div className="min-h-[160px] min-w-[180px] relative">
               <Image
                 src={image.img}
                 alt={image.alt}
