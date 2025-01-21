@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
 import { TbAdjustmentsHorizontal } from 'react-icons/tb';
 import ring1 from '@/components/images/collections/ring1.jpg';
 import ring2 from '@/components/images/collections/ring2.jpg';
@@ -17,12 +17,12 @@ import Image from 'next/image';
 import "@fontsource-variable/montserrat";
 
 function Collections() {
-    const [priceRange, setPriceRange] = useState([0,1000])
+    // const [priceRange, setPriceRange] = useState([0,1000])
 
-    const handleRange = (e:any) => {
-        const value = e.target.value;
-        setPriceRange([0, parseInt(value, 10)]);
-    }
+    // const handleRange = (e) => {
+    //     const value = e.target.value;
+    //     setPriceRange([0, parseInt(value, 10)]);
+    // }
 
     const rings = [
         { img: ring1, alt: 'ring1' },
@@ -49,10 +49,10 @@ function Collections() {
                     </div>
                     <div className="space-y-4">
                         <h3 className="text-xl font-medium font-montserrat">Price</h3>
-                        <input type="range" onClick={handleRange} className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#02373a]" />
+                        <input type="range" className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#02373a]" />
                         <div className="flex justify-between text-sm text-gray-700">
                             <span className="text-xl font-medium font-montserrat">Filter</span>
-                            <span className="text-xl font-medium font-montserrat">Price: ${priceRange[0]} - ${priceRange[1]}</span>
+                            <span className="text-xl font-medium font-montserrat">Price: $200 - $1000</span>
                         </div>
                     </div>
                     <div className="space-y-2">
