@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import { TbAdjustmentsHorizontal } from 'react-icons/tb';
 import ring1 from '@/components/images/collections/ring1.jpg';
 import ring2 from '@/components/images/collections/ring2.jpg';
@@ -16,6 +17,13 @@ import Image from 'next/image';
 import "@fontsource-variable/montserrat";
 
 function Collections() {
+    const [priceRange, setPriceRange] = useState([0,1000])
+
+    const handleRange = (e:any) => {
+        const value = e.target.value;
+        setPriceRange([0, parseInt(value, 10)]);
+    }
+
     const rings = [
         { img: ring1, alt: 'ring1' },
         { img: ring2, alt: 'ring2' },
@@ -33,18 +41,18 @@ function Collections() {
 
     return (
         <>
-            <div className="flex justify-around flex-col lg:flex-row my-10">
-                <div className="w-full lg:w-1/4 space-y-8 m-3">
+            <div className="flex justify-between flex-col lg:flex-row my-8 m-10">
+                <div className="w-full lg:w-1/4 space-y-8 m-3 mt-24">
                     <div className="flex items-center gap-3">
                         <h3 className="text-2xl font-montserrat">Filter & Sort</h3>
                         <TbAdjustmentsHorizontal size={25} />
                     </div>
                     <div className="space-y-4">
                         <h3 className="text-xl font-medium font-montserrat">Price</h3>
-                        <input type="range" className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#02373a]" />
+                        <input type="range" onClick={handleRange} className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#02373a]" />
                         <div className="flex justify-between text-sm text-gray-700">
                             <span className="text-xl font-medium font-montserrat">Filter</span>
-                            <span className="text-xl font-medium font-montserrat">Price: $200 - $1000</span>
+                            <span className="text-xl font-medium font-montserrat">Price: ${priceRange[0]} - ${priceRange[1]}</span>
                         </div>
                     </div>
                     <div className="space-y-2">
@@ -62,7 +70,7 @@ function Collections() {
                         </select>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20">
                     {rings.map((item, index) => (
                         <div
                             key={index}
