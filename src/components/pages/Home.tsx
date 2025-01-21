@@ -1,10 +1,10 @@
 "use client";
 import React, { useRef } from "react";
-import img1 from "@/components/images/categories/ring.png";
-import img2 from "@/components/images/categories/bracelet.png";
-import img3 from "@/components/images/categories/earring.png";
-import img4 from "@/components/images/categories/necklace.png";
-import img5 from "@/components/images/categories/pendant.png";
+import img1 from "@/components/images/categories/ring.jpg";
+import img2 from "@/components/images/categories/bracelet.jpg";
+import img3 from "@/components/images/categories/earring.jpg";
+import img4 from "@/components/images/categories/necklace.jpg";
+import img5 from "@/components/images/categories/pendant.jpg";
 import Image from "next/image";
 import "@fontsource-variable/montserrat";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";

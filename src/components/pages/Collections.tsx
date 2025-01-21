@@ -1,17 +1,17 @@
 import React from 'react';
 import { TbAdjustmentsHorizontal } from 'react-icons/tb';
-import ring1 from '@/components/images/collections/ring1.png';
-import ring2 from '@/components/images/collections/ring2.png';
-import ring3 from '@/components/images/collections/ring3.png';
-import ring4 from '@/components/images/collections/ring4.png';
-import ring5 from '@/components/images/collections/ring5.png';
-import ring6 from '@/components/images/collections/ring6.png';
-import ring7 from '@/components/images/collections/ring7.png';
-import ring8 from '@/components/images/collections/ring8.png';
-import ring9 from '@/components/images/collections/ring9.png';
-import ring10 from '@/components/images/collections/ring10.png';
-import ring11 from '@/components/images/collections/ring11.png';
-import ring12 from '@/components/images/collections/ring12.png';
+import ring1 from '@/components/images/collections/ring1.jpg';
+import ring2 from '@/components/images/collections/ring2.jpg';
+import ring3 from '@/components/images/collections/ring3.jpg';
+import ring4 from '@/components/images/collections/ring4.jpg';
+import ring5 from '@/components/images/collections/ring5.jpg';
+import ring6 from '@/components/images/collections/ring6.jpg';
+import ring7 from '@/components/images/collections/ring7.jpg';
+import ring8 from '@/components/images/collections/ring8.jpg';
+import ring9 from '@/components/images/collections/ring9.jpg';
+import ring10 from '@/components/images/collections/ring10.jpg';
+import ring11 from '@/components/images/collections/ring11.jpg';
+import ring12 from '@/components/images/collections/ring12.jpg';
 import Image from 'next/image';
 import "@fontsource-variable/montserrat";
 
@@ -34,7 +34,7 @@ function Collections() {
     return (
         <>
             <div className="flex justify-around flex-col lg:flex-row my-10">
-                <div className="w-full lg:w-1/4 space-y-8">
+                <div className="w-full lg:w-1/4 space-y-8 m-3">
                     <div className="flex items-center gap-3">
                         <h3 className="text-2xl font-montserrat">Filter & Sort</h3>
                         <TbAdjustmentsHorizontal size={25} />

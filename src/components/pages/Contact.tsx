@@ -4,8 +4,8 @@ import "@fontsource-variable/montserrat";
 
 function Contact() {
     return (
-        <div className='flex justify-center items-center bg-[#e8ecef] min-h-screen'>
-            <div className='w-full p-10'>
+        <div className='flex justify-center items-center place-item-center bg-[#e8ecef] px-10 py-14'>
+            <div className='w-full'>
                 <h2 className='text-2xl font-normal text-black my-6 font-montserrat'>Contact Information</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                     <div className='w-auto h-10 text-white bg-[#B7A99A] px-8 py-10 text-2xl rounded-xl flex items-center justify-center font-montserrat'>Kannu Verma +1 (917) 379-6816</div>
@@ -18,7 +18,7 @@ function Contact() {
                             type="text"
                             id="firstName"
                             placeholder="First Name"
-                            className="w-full h-12 px-4 rounded-2xl font-montserrat placeholder:text-xl"
+                            className="w-full h-12 px-4 rounded-2xl font-montserrat placeholder:text-xl placeholder:text-center"
                         />
                     </div>
                     <div>
@@ -26,7 +26,7 @@ function Contact() {
                             type="text"
                             id="lastName"
                             placeholder="Last Name"
-                            className="w-full h-12 px-4 rounded-2xl font-montserrat placeholder:text-xl"
+                            className="w-full h-12 px-4 rounded-2xl font-montserrat placeholder:text-xl placeholder:text-center"
                         />
                     </div>
                 </div>
@@ -36,7 +36,7 @@ function Contact() {
                             type="text"
                             id="firstName"
                             placeholder="Mail ID"
-                            className="w-full h-12 px-4 rounded-2xl font-montserrat placeholder:text-xl"
+                            className="w-full h-12 px-4 rounded-2xl font-montserrat placeholder:text-xl placeholder:text-center"
                         />
                     </div>
                     <div>
@@ -44,13 +44,13 @@ function Contact() {
                             type="text"
                             id="lastName"
                             placeholder="Contact Number"
-                            className="w-full h-12 px-4 rounded-2xl font-montserrat placeholder:text-xl"
+                            className="w-full h-12 px-4 rounded-2xl font-montserrat placeholder:text-xl placeholder:text-center"
                         />
                     </div>
                 </div>
                 <textarea
                     placeholder='Message'
-                    className="rounded-xl px-3 h-40 w-full text-[#787d7d] bg-white font-montserrat placeholder:text-xl"
+                    className="rounded-xl px-4 h-40 w-full text-[#787d7d] bg-white font-montserrat placeholder:text-xl placeholder:text-center"
                 />
                 <div className="text-center my-4">
               <button
