@@ -2,11 +2,11 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import ring from "@/components/images/categories/ring.png";
-import bracelet from "@/components/images/categories/bracelet.png";
-import earring from "@/components/images/categories/earring.png";
-import necklace from "@/components/images/categories/necklace.png";
-import pendant from "@/components/images/categories/pendant.png";
+import ring from "@/components/images/categories/ring.jpg";
+import bracelet from "@/components/images/categories/bracelet.jpg";
+import earring from "@/components/images/categories/earring.jpg";
+import necklace from "@/components/images/categories/necklace.jpg";
+import pendant from "@/components/images/categories/pendant.jpg";
 import Link from "next/link";
 
 function JewellsCategory() {
