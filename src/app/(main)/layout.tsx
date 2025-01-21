@@ -9,7 +9,7 @@ const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <>
       <MenuBar />
-      <Profile />
+      {/* <Profile /> */}
       <div className="flex justify-between items-center mt-0">
         <div className="relative flex flex-1 ">
           <main className="flex-1 font-montserrat">{children}</main>
