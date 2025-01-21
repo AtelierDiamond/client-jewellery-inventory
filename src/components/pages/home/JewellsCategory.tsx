@@ -38,7 +38,7 @@ function JewellsCategory() {
   ];
 
   return (
-    <div className="p-6 bg-white">
+    <div className="p-6 bg-white ">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl font-normal text-black font-montserrat">
           Categories
@@ -68,7 +68,7 @@ function JewellsCategory() {
             key={index}
             className="flex flex-col items-center bg-[#EBE5DF] rounded-2xl shadow-md p-3 hover:shadow-lg transition duration-200"
           >
-            <div className="min-h-[180px] min-w-[200px] relative">
+            <div className="min-h-[160px] min-w-[180px] relative">
               <Image
                 src={image.img}
                 alt={image.alt}
