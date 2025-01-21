@@ -43,7 +43,7 @@ function JewellsCategory() {
         <h2 className="text-3xl font-normal text-black font-montserrat">
           Categories
         </h2>
-        <div className="flex gap-2">
+        <div className="flex gap-2" >
           <button
             onClick={scrollLeft}
             className="w-10 h-8 rounded-md bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black"
