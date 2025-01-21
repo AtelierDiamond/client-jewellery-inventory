@@ -62,7 +62,7 @@ function JewellsCategory() {
         ref={scrollRef}
         className="flex justify-start items-center space-x-8 overflow-auto no-scrollbar"
       >
-        {categoryImages.map((image: any, index: number) => (
+        {categoryImages.map((image, index: number) => (
           <Link
             href={"#"}
             key={index}
