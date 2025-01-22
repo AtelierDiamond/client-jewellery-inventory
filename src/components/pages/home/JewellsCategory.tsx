@@ -65,14 +65,14 @@ function JewellsCategory() {
         {categoryImages.map((item, index) => (
          <div key={index} className="bg-[#ebe5df] p-2 rounded-2xl">
              <div
-            className=" min-w-[180px] min-h-[160] relative"
+            className="min-w-[180px] min-h-[160] relative"
           >
             <Link href="#">
               <Image
                 className="rounded-xl object-cover"
                 src={item.img}
                 alt={item.alt}
-                fill
+                
               />
             </Link>
           </div>
