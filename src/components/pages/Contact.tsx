@@ -54,7 +54,7 @@ function Contact() {
                 <div className="text-center my-4">
               <button
                 type="submit"
-                className="px-8 py-2 bg-[#02373A] text-white font-bold text-xl"
+                className="px-8 py-2 bg-[#02373A] text-white font-medium text-xl"
               >
                 Submit
               </button>
