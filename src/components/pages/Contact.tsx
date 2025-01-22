@@ -17,7 +17,7 @@ function Contact() {
                             type="text"
                             id="firstName"
                             placeholder="First Name"
-                            className="w-full h-12 px-4 rounded-2xl placeholder:text-xl placeholder:text-center"
+                            className="w-full h-12 px-4 rounded-2xl text-xl placeholder:text-xl placeholder:text-center"
                         />
                     </div>
                     <div>
@@ -25,7 +25,7 @@ function Contact() {
                             type="text"
                             id="lastName"
                             placeholder="Last Name"
-                            className="w-full h-12 px-4 rounded-2xl placeholder:text-xl placeholder:text-center"
+                            className="w-full h-12 px-4 rounded-2xl text-xl placeholder:text-xl placeholder:text-center"
                         />
                     </div>
                 </div>
@@ -35,21 +35,21 @@ function Contact() {
                             type="text"
                             id="firstName"
                             placeholder="Mail ID"
-                            className="w-full h-12 px-4 rounded-2xl placeholder:text-xl placeholder:text-center"
+                            className="w-full h-12 px-4 rounded-2xl text-xl placeholder:text-xl placeholder:text-center"
                         />
                     </div>
                     <div>
                         <input
-                            type="text"
+                            type="tel"
                             id="lastName"
                             placeholder="Contact Number"
-                            className="w-full h-12 px-4 rounded-2xl placeholder:text-xl placeholder:text-center"
+                            className="w-full h-12 px-4 rounded-2xl text-xl placeholder:text-xl placeholder:text-center"
                         />
                     </div>
                 </div>
                 <textarea
                     placeholder='Message'
-                    className="rounded-xl px-4 h-40 w-full text-[#787d7d] bg-white placeholder:text-xl placeholder:text-center"
+                    className="rounded-xl px-4 h-40 w-full text-black text-[#787d7d] text-xl bg-white placeholder:text-xl placeholder:text-center"
                 />
                 <div className="text-center my-4">
               <button
