@@ -6,10 +6,10 @@ import React from 'react'
 function page() {
   return (
     <>
-      <Profile customClass='text-white'/>
+      <Profile customClass='text-white' />
       <div className='h-screen'>
-      <Banner/>
-      <JewellsCategory/>
+        <Banner />
+        <JewellsCategory />
       </div>
     </>
   )
