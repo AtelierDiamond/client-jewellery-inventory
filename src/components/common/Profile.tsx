@@ -18,7 +18,7 @@ function Profile({customClass}: {customClass?: string}) {
                     className="relative w-full font-montserrat shadow-md rounded-full text-center border border-[#B7A99A] placeholder:text-gray-500 text-md placeholder:text-md text-black px-3 py-1"
                 />
             </div>
-            <div className='flex justify-center items-center bg-transparent rounded-md p-1 shadow-md m-3'>
+            <div className='flex justify-between items-center bg-transparent rounded-md p-1 shadow-md m-3 px-2'>
                 <Image src={profile} className='rounded-full w-10' alt='profile' />
                 <div>
                     <p className={`text-xs font-normal ${customClass}`}>Donna Stroupe</p>

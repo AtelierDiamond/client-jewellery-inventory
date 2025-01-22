@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import { TbAdjustmentsHorizontal } from 'react-icons/tb';
 import ring1 from '@/components/images/collections/ring1.jpg';
 import ring2 from '@/components/images/collections/ring2.jpg';
@@ -17,13 +17,7 @@ import Image from 'next/image';
 import "@fontsource-variable/montserrat";
 
 function Collections() {
-    // const [priceRange, setPriceRange] = useState([0,1000])
-
-    // const handleRange = (e) => {
-    //     const value = e.target.value;
-    //     setPriceRange([0, parseInt(value, 10)]);
-    // }
-
+    const [priceRange, setPriceRange] = useState([0, 100000]);
     const rings = [
         { img: ring1, alt: 'ring1' },
         { img: ring2, alt: 'ring2' },
@@ -39,20 +33,46 @@ function Collections() {
         { img: ring12, alt: 'ring12' },
     ];
 
+    const handlePriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const value = parseInt(event.target.value, 10);
+        if (event.target.name === 'min') {
+            setPriceRange([value, priceRange[1]]);
+        } else if (event.target.name === 'max') {
+            setPriceRange([priceRange[0], value]);
+        }
+    };
+
     return (
         <>
-            <div className="flex justify-between flex-col lg:flex-row my-8 m-10">
-                <div className="w-full lg:w-1/4 space-y-8 m-3 mt-24">
+            <div className="flex justify-between flex-col lg:flex-row my-8 m-10 relative">
+                <div className="w-full lg:w-1/4 space-y-8 mt-24">
                     <div className="flex items-center gap-3">
                         <h3 className="text-2xl font-montserrat">Filter & Sort</h3>
                         <TbAdjustmentsHorizontal size={25} />
                     </div>
                     <div className="space-y-4">
                         <h3 className="text-xl font-medium font-montserrat">Price</h3>
-                        <input type="range" className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#02373a]" />
+                        <input
+                            type="range"
+                            name="min"
+                            min="0"
+                            max="10000"
+                            value={priceRange[0]}
+                            onChange={handlePriceChange}
+                            className="h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#02373a]"
+                        />
+                        <input
+                            type="range"
+                            name="max"
+                            min="10000"
+                            max="100000"
+                            value={priceRange[1]}
+                            onChange={handlePriceChange}
+                            className="absolute h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#02373a]"
+                        />
                         <div className="flex justify-between text-sm text-gray-700">
-                            <span className="text-xl font-medium font-montserrat">Filter</span>
-                            <span className="text-xl font-medium font-montserrat">Price: $200 - $1000</span>
+                            <span className="lg:text-xl font-medium font-montserrat bg-[#ebe5df] p-1 rounded-full px-2 pt-0 pb-0">Filter</span>
+                            <span className="lg:text-xl font-medium font-montserrat">Price: ${priceRange[0]} - ${priceRange[1]}</span>
                         </div>
                     </div>
                     <div className="space-y-2">
