@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
 import { TbAdjustmentsHorizontal } from 'react-icons/tb';
 import ring1 from '@/components/images/collections/ring1.jpg';
 import ring2 from '@/components/images/collections/ring2.jpg';
@@ -16,7 +16,7 @@ import ring12 from '@/components/images/collections/ring12.jpg';
 import Image from 'next/image';
 
 function Collections() {
-    const [priceRange, setPriceRange] = useState([0, 100000]);
+    // const [priceRange, setPriceRange] = useState([0, 100000]);
     const rings = [
         { img: ring1, alt: 'ring1' },
         { img: ring2, alt: 'ring2' },
@@ -32,14 +32,14 @@ function Collections() {
         { img: ring12, alt: 'ring12' },
     ];
 
-    const handlePriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const value = parseInt(event.target.value, 10);
-        if (event.target.name === 'min') {
-            setPriceRange([value, priceRange[1]]);
-        } else if (event.target.name === 'max') {
-            setPriceRange([priceRange[0], value]);
-        }
-    };
+    // const handlePriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //     const value = parseInt(event.target.value, 10);
+    //     if (event.target.name === 'min') {
+    //         setPriceRange([value, priceRange[1]]);
+    //     } else if (event.target.name === 'max') {
+    //         setPriceRange([priceRange[0], value]);
+    //     }
+    // };
 
     return (
         <>
