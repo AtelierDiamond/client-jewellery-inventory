@@ -47,7 +47,7 @@ function MenuBar() {
                     onClick={() => router.push("/certified-stone")} 
                     className="md:w-[45%] md:max-w-[280px] text-white font-medium flex flex-col items-center cursor-pointer">
                     <div className="text-md md:text-xl font-serif uppercase font-bold ">B2B Designs</div>
-                    <p className="text-xs md:text-md uppercase font-montserrat">Diamond Jewellery</p>
+                    <p className="text-xs md:text-md uppercase">Diamond Jewellery</p>
                 </div>
                 <div className="items-center pr-8 gap-1 hidden md:flex">
                     {menuItems.map((item) => (

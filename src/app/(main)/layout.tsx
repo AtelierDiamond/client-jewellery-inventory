@@ -2,7 +2,7 @@
 
 import React, { FC, ReactNode } from "react";
 import MenuBar from "@/components/base/MenuBar";
-import "@fontsource-variable/montserrat";
+
 
 const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
@@ -10,7 +10,7 @@ const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
       <MenuBar />
       <div className="flex justify-between items-center mt-0">
         <div className="relative flex flex-1 ">
-          <main className="flex-1 font-montserrat">{children}</main>
+          <main className="flex-1">{children}</main>
         </div>
       </div>
     </>

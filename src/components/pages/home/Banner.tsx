@@ -1,11 +1,10 @@
 import React from "react";
-import "@fontsource-variable/montserrat";
 
 function Banner() {
   return (
-    <div className="w-full h-1/2 relative border">
+    <div className="w-full h-1/2 relative">
       <video
-        className="w-full h-full object-cover  border-bottom-none opacity-80 " 
+        className="w-full h-full object-cover opacity-80 " 
         autoPlay={true}
         muted={true}
         loop={true}
