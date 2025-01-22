@@ -36,22 +36,23 @@ function JewellsCategory() {
     { img: necklace, alt: "Necklace" },
     { img: pendant, alt: "Pendant" },
   ];
+ 
 
   return (
     <div className="w-[98vw] p-4 mx-auto">
-      <h2 className="text-3xl font-normal text-black font-montserrat ">
+      <h2 className="text-3xl text-black ">
         Categories
       </h2>
       <div className="flex justify-end gap-2 mb-4">
         <button
           onClick={scrollLeft}
-          className="w-10 h-10 rounded-md bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black"
+          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center ${scrollRef.current && scrollRef?.current?.offsetWidth>0}`}
         >
           <MdKeyboardArrowLeft size={25} />
         </button>
         <button
           onClick={scrollRight}
-          className="w-10 h-10 rounded-md bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black"
+          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center ${scrollRef.current && scrollRef?.current?.offsetWidth<0}`}
         >
           <MdKeyboardArrowRight size={25} />
         </button>
@@ -62,21 +63,21 @@ function JewellsCategory() {
         style={{ scrollSnapType: "x mandatory" }}
       >
         {categoryImages.map((item, index) => (
-          <div key={index} className="bg-[#ebe5df] p-2 rounded-2xl">
-            <div
-              className=" min-w-[180px] min-h-[160] relative"
-            >
-              <Link href="#">
-                <Image
-                  className="rounded-xl object-cover"
-                  src={item.img}
-                  alt={item.alt}
-                  fill
-                />
-              </Link>
-            </div>
-            <h1 className="text-center text-lg font-medium">{item.alt}</h1>
+         <div key={index} className="bg-[#ebe5df] p-2 rounded-2xl">
+             <div
+            className=" min-w-[180px] min-h-[160] relative"
+          >
+            <Link href="#">
+              <Image
+                className="rounded-xl object-cover"
+                src={item.img}
+                alt={item.alt}
+                fill
+              />
+            </Link>
           </div>
+            <h1 className="text-center text-sm mt-2 font-medium">{item.alt}</h1>
+         </div>
         ))}
       </div>
     </div>

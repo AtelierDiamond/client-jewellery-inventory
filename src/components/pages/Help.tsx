@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
-import "@fontsource-variable/montserrat";
 
 function Help() {
     const [isOpen, setIsOpen] = useState<number | null>(null);
@@ -31,7 +30,7 @@ function Help() {
                                 className="flex justify-between items-center cursor-pointer bg-white"
                                 onClick={() => toggleFAQ(index)}
                             >
-                                <h2 className="text-lg font-normal font-montserrat px-4 p-2">
+                                <h2 className="text-lg font-normal px-4 p-2">
                                     {item.question}
                                 </h2>
                                 <span className="px-2 text-xl">
@@ -39,7 +38,7 @@ function Help() {
                                 </span>
                             </div>
                             {isOpen === index && (
-                                <p className="mt-2 font-normal font-montserrat px-4 text-md text-[#333333]">
+                                <p className="mt-2 font-normal px-4 text-md text-[#333333]">
                                     {item.answer}
                                 </p>
                             )}

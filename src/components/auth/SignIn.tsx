@@ -4,7 +4,6 @@ import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import jewellery from '@/components/images/login/login-jewellery.jpg'
 import Image from 'next/image';
-import "@fontsource-variable/montserrat";
 
 function Login() {
     const [hide, setHide] = useState<boolean>(false);
