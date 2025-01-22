@@ -8,8 +8,8 @@ function page() {
     <>
       <Profile customClass='text-white'/>
       <div className='flex flex-col h-[91vh] '>
-      <Banner/>
-      <JewellsCategory/>
+        <Banner/>
+        <JewellsCategory/>
       </div>
     </>
   )

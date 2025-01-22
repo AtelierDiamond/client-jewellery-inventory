@@ -6,7 +6,7 @@ function page() {
   return (
     <div>
       <Profile />
-        <Contact/>
+      <Contact/>
     </div>
   )
 }
