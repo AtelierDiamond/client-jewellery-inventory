@@ -6,10 +6,10 @@ import React from 'react'
 function page() {
   return (
     <>
-      <Profile customClass='text-white'/>
-      <div className='flex flex-col h-[91vh] '>
-      <Banner/>
-      <JewellsCategory/>
+      <Profile customClass='text-white' />
+      <div className='h-screen'>
+        <Banner />
+        <JewellsCategory />
       </div>
     </>
   )

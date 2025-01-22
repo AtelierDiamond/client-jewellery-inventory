@@ -4,27 +4,28 @@ import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import jewellery from '@/components/images/login/login-jewellery.jpg'
 import Image from 'next/image';
-import "@fontsource-variable/montserrat";
 
 function Login() {
     const [hide, setHide] = useState<boolean>(false);
     return (
-        <div className='grid grid-cols-2'>
-            <Image
+        <div className='h-screen grid grid-cols-1 md:grid-cols-2'>
+           <div className='hidden md:block h-full h-screen'>
+           <Image
                 src={jewellery}
                 alt="jewellery"
-                className=""
+                className="h-full"
             />
-            <div className="w-full max-w-md mx-auto px-4 place-content-center">
-                <div className='bg-[#EBE5DF] rounded-lg shadow-xl w-auto p-6'>
+           </div>
+            <div className="md:w-1/2 m-auto">
+                <div className='bg-[#EBE5DF] rounded-2xl shadow-xl w-auto p-6'>
                     <form className="space-y-4">
-                        <h2 className='text-xl font-serif text-center font-bold'>LOG IN</h2>
+                        <h2 className='text-xl  text-center font-semibold '>LOG IN</h2>
                         <div className="mb-4">
                             <input
                                 type="text"
                                 id="userName"
                                 placeholder="USERNAME"
-                                className="shadow appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="shadow appearance-none border rounded-full w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
                         </div>
                         <>
@@ -33,7 +34,7 @@ function Login() {
                                     <input
                                         type={!hide ? "password" : "text"}
                                         id="password"
-                                        className="w-full h-10 px-4 rounded-3xl border shadow "
+                                        className="w-full py-1 px-4 rounded-3xl border shadow "
                                         placeholder="PASSWORD"
                                     />
                                     <div
@@ -50,22 +51,22 @@ function Login() {
                                 <input
                                     type="checkbox"
                                     id="savePassword"
-                                    className="h-4 w-4 text-black"
+                                    className="h-3 w-3 text-black"
                                 />
-                                <label htmlFor="savePassword" className="ml-2 text-gray-700 text-md">
+                                <label htmlFor="savePassword" className="ml-2 text-gray-700 text-xs md:text-xs">
                                     Save password
                                 </label>
                             </div>
                             <button
                                 type="button"
-                                className="text-gray-700 text-md"
+                                className="text-gray-700 text-md text-xs md:text-xs"
                             >
                                 Forgot Password?
                             </button>
                         </div>
                         <div className="text-center">
-                            <button type="submit" className="bg-[#02373A] text-white rounded-full px-6 py-2 text-md font-semibold">
-                                Login
+                            <button type="submit" className="bg-[#02373A] text-white rounded-full px-6 py-2 text-sm font-medium">
+                                Sign in
                             </button>
                         </div>
                     </form>
