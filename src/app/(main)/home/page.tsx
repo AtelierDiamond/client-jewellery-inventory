@@ -7,7 +7,7 @@ function page() {
   return (
     <>
       <Profile customClass='text-white'/>
-      <div className='flex flex-col h-[91vh] '>
+      <div className='h-screen'>
       <Banner/>
       <JewellsCategory/>
       </div>
