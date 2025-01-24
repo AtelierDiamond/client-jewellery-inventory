@@ -11,9 +11,7 @@ function JewellsItemsCard({
     price: number;
 }) {
   return <div>
-         <div className="relative w-[160] h-[160]">
-            <Image src={img} alt={title} className="rounded-tr-3xl rounded-bl-3xl object-cover border border-black w-full h-full" />
-         </div>
+            <Image height={160} width={160} src={img} alt={title} className="rounded-tr-3xl rounded-bl-3xl object-cover border border-black" />
          <div className="flex flex-col items-center text-xs tracking-wider font-normal text-black mt-3">
             <span>{title}</span>
             <span>${price}</span>
