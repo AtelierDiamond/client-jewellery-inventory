@@ -13,52 +13,52 @@ import Link from "next/link";
 function Jewells() {
 
     const items = [
-        {img:product1,title:"Hand Bracelet",price:100},
-        {img:product2,title:"Hand Bracelet",price:100},
-        {img:product3,title:"Hand Bracelet",price:100},
-        {img:product4,title:"Hand Bracelet",price:100},
-        {img:product5,title:"Hand Bracelet",price:100},
-        {img:product6,title:"Hand Bracelet",price:100},
-        {img:product1,title:"Hand Bracelet",price:100},
-        {img:product2,title:"Hand Bracelet",price:100},
-        {img:product3,title:"Hand Bracelet",price:100},
-        {img:product4,title:"Hand Bracelet",price:100},
-        {img:product5,title:"Hand Bracelet",price:100},
-        {img:product6,title:"Hand Bracelet",price:100},
-        {img:product1,title:"Hand Bracelet",price:100},
-        {img:product2,title:"Hand Bracelet",price:100},
-        {img:product3,title:"Hand Bracelet",price:100},
-        {img:product4,title:"Hand Bracelet",price:100},
-        {img:product5,title:"Hand Bracelet",price:100},
-        {img:product6,title:"Hand Bracelet",price:100},
-        {img:product1,title:"Hand Bracelet",price:100},
-        {img:product2,title:"Hand Bracelet",price:100},
-        {img:product3,title:"Hand Bracelet",price:100},
-        {img:product4,title:"Hand Bracelet",price:100},
-        {img:product5,title:"Hand Bracelet",price:100},
-        {img:product6,title:"Hand Bracelet",price:100},
+        { img: product1, title: "Hand Bracelet", price: 100 },
+        { img: product2, title: "Hand Bracelet", price: 100 },
+        { img: product3, title: "Hand Bracelet", price: 100 },
+        { img: product4, title: "Hand Bracelet", price: 100 },
+        { img: product5, title: "Hand Bracelet", price: 100 },
+        { img: product6, title: "Hand Bracelet", price: 100 },
+        { img: product1, title: "Hand Bracelet", price: 100 },
+        { img: product2, title: "Hand Bracelet", price: 100 },
+        { img: product3, title: "Hand Bracelet", price: 100 },
+        { img: product4, title: "Hand Bracelet", price: 100 },
+        { img: product5, title: "Hand Bracelet", price: 100 },
+        { img: product6, title: "Hand Bracelet", price: 100 },
+        { img: product1, title: "Hand Bracelet", price: 100 },
+        { img: product2, title: "Hand Bracelet", price: 100 },
+        { img: product3, title: "Hand Bracelet", price: 100 },
+        { img: product4, title: "Hand Bracelet", price: 100 },
+        { img: product5, title: "Hand Bracelet", price: 100 },
+        { img: product6, title: "Hand Bracelet", price: 100 },
+        { img: product1, title: "Hand Bracelet", price: 100 },
+        { img: product2, title: "Hand Bracelet", price: 100 },
+        { img: product3, title: "Hand Bracelet", price: 100 },
+        { img: product4, title: "Hand Bracelet", price: 100 },
+        { img: product5, title: "Hand Bracelet", price: 100 },
+        { img: product6, title: "Hand Bracelet", price: 100 },
     ]
 
-  
 
-  return <div className="h-full flex">
-       <JewellsSideBar img={handbracelet} title="Bracelet Collection"/>
-       <div className="w-1/2 h-full flex-1 overflow-y-scroll ">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-4 place-items-center space-y-3">
-          {
-                items.map((item,index) => (
-                    <Link  key={index}  href={`/jewells/${index}`}>
-                         <JewellsItemsCard 
-                    img={item.img} 
-                    title={item.title} 
-                    price={item.price}
-                    />
-                    </Link>
-                ))
-          }
-          </div>
-       </div> 
-  </div> ;
+
+    return <div className="h-full flex">
+        <JewellsSideBar img={handbracelet} title="Bracelet Collection" />
+        <div className="w-1/2 h-full flex-1 overflow-y-scroll ">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-4 place-items-center space-y-3">
+                {
+                    items.map((item, index) => (
+                        <Link key={index} href={`/jewells/${index}`}>
+                            <JewellsItemsCard
+                                img={item.img}
+                                title={item.title}
+                                price={item.price}
+                            />
+                        </Link>
+                    ))
+                }
+            </div>
+        </div>
+    </div>;
 }
 
 export default Jewells;
