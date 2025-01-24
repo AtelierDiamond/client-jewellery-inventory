@@ -77,7 +77,6 @@ function JewellsCategory() {
                 className="rounded-xl object-cover"
                 src={item.img}
                 alt={item.alt}
-                
               />
             </Link>
           </div>

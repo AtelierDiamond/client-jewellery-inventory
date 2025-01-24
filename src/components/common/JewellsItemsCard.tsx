@@ -12,7 +12,7 @@ function JewellsItemsCard({
 }) {
   return <div>
          <div className="relative w-[160] h-[160]">
-            <Image fill src={img} alt={title} className="rounded-tr-3xl rounded-bl-3xl object-cover border border-black" />
+            <Image src={img} alt={title} className="rounded-tr-3xl rounded-bl-3xl object-cover border border-black w-full h-full" />
          </div>
          <div className="flex flex-col items-center text-xs tracking-wider font-normal text-black mt-3">
             <span>{title}</span>
