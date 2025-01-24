@@ -13,6 +13,8 @@
     "@hookform/resolvers": "^3.10.0",
     "@reduxjs/toolkit": "^2.5.0",
     "axios": "^1.7.9",
+    "embla-carousel": "^8.5.2",
+    "embla-carousel-react": "^8.5.2",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
