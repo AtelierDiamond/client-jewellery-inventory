@@ -6,14 +6,12 @@ import MenuBar from "@/components/base/MenuBar";
 
 const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <MenuBar />
-      <div className="flex justify-between items-center mt-0">
-        <div className="relative flex flex-1 ">
-          <main className="flex-1">{children}</main>
-        </div>
-      </div>
-    </>
+      <section className="flex-1 overflow-y-auto">
+                   <main className="h-full ">{children}</main>
+      </section>
+    </div>
   );
 };
 

@@ -72,11 +72,11 @@ function Collections() {
                         </select>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20 lg:w-1/2">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20 lg:w-3/4">
                     {rings.map((item, index) => (
                         <div
                             key={index}
-                            className="p-4"
+                            className="p-4 mx-auto"
                         >
                             <Image
                                 src={item.img}

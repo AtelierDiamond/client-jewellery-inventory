@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useRef } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import ring from "@/components/images/categories/ring.jpg";
@@ -8,6 +8,11 @@ import earring from "@/components/images/categories/earring.jpg";
 import necklace from "@/components/images/categories/necklace.jpg";
 import pendant from "@/components/images/categories/pendant.jpg";
 import Link from "next/link";
+
+type Item = {
+  img: StaticImageData;
+  alt: string;
+};
 
 function JewellsCategory() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -24,7 +29,7 @@ function JewellsCategory() {
     }
   };
 
-  const categoryImages = [
+  const categoryImages:Item[] = [
     { img: ring, alt: "Ring" },
     { img: bracelet, alt: "Bracelet" },
     { img: earring, alt: "Earring" },
@@ -65,14 +70,14 @@ function JewellsCategory() {
         {categoryImages.map((item, index) => (
          <div key={index} className="bg-[#ebe5df] p-2 rounded-2xl">
              <div
-            className=" min-w-[180px] min-h-[160] relative"
+            className="min-w-[180px] min-h-[160] relative"
           >
-            <Link href="#">
+            <Link href={`/jewells?category=${item.alt.toLowerCase()}`} passHref>
               <Image
                 className="rounded-xl object-cover"
                 src={item.img}
                 alt={item.alt}
-                fill
+                
               />
             </Link>
           </div>
