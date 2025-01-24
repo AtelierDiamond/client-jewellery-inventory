@@ -41,7 +41,7 @@ function Jewells() {
   
 
   return <div className="h-full flex">
-       <JewellsSideBar img={handbracelet} title="Bracellete Collection"/>
+       <JewellsSideBar img={handbracelet} title="Bracelet Collection"/>
        <div className="w-1/2 h-full flex-1 overflow-y-scroll ">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-4 place-items-center space-y-3">
           {
