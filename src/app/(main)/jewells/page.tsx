@@ -8,6 +8,7 @@ import product4 from "@/components/images/product/product4.jpg";
 import product5 from "@/components/images/product/product5.jpg";
 import product6 from "@/components/images/product/product6.jpg";
 import JewellsItemsCard from "@/components/common/JewellsItemsCard";
+import Link from "next/link";
 
 function Jewells() {
 
@@ -46,12 +47,13 @@ function Jewells() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-4 place-items-center space-y-3">
           {
                 items.map((item,index) => (
-                    <JewellsItemsCard 
-                    key={index} 
+                    <Link  key={index}  href={`/jewells/${index}`}>
+                         <JewellsItemsCard 
                     img={item.img} 
                     title={item.title} 
                     price={item.price}
                     />
+                    </Link>
                 ))
           }
           </div>
