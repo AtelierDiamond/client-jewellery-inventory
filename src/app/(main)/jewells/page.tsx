@@ -40,7 +40,6 @@ function Jewells() {
     ]
 
 
-
     return <div className="h-full flex">
         <JewellsSideBar img={handbracelet} title="Bracelet Collection" />
         <div className="w-1/2 h-full flex-1 overflow-y-scroll ">

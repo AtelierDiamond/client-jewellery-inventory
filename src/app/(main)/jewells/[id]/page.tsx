@@ -4,7 +4,6 @@ import React from "react";
 import img1 from "@/components/images/single-page/bracelet.jpg";
 import img2 from "@/components/images/single-page/first.png";
 import img3 from "@/components/images/single-page/fourth.png";
-// import { title } from "process";
 import MetalType from "@/components/pages/JewellDetails/MetalType";
 import SizeSelectors from "@/components/pages/JewellDetails/SizeSelectors";
 import Selector from "@/components/common/Selector";
@@ -26,7 +25,12 @@ function page() {
     { id: 3, colorCode: "#e7ba9a", text: "", title: "Rose gold" },
   ];
 
-  const sizes = [6,6.5,7,7.5];
+  const sizes = [
+    {id:"size1", value:6, title:"6"},
+    {id:"size2", value:6.5, title:"6.5"},
+    {id:"size3", value:7, title:"7"},
+    {id:"size4", value:7.5, title:"7.5"},
+  ];
 
   const color = [
     {value:"DEF", title:"DEF"},
@@ -38,11 +42,11 @@ function page() {
  
 
   return (
-    <div className="relative grid-cols-2 h-full flex">
-      <div className="w-1/2 flex justify-center items-center">
+    <div className="relative grid grid-cols-1 md:grid-cols-2 h-full">
+      <div className="flex justify-center items-center">
         <ProductDetailSlider slides={SliderImage} options={OPTIONS} />
       </div>
-      <div className="w-1/2 bg-[#20403a] text-white">
+      <div className="bg-[#20403a] text-white md:mb-none">
         <h1 className="text-xl text-center mt-10">
           14k Round Diamond Tennis Bracelet
         </h1>
@@ -67,7 +71,7 @@ function page() {
               <Selector  options={color} customClass="" />
            </div>
            <div className="text-center">
-           <button className="rounded-3xl mt-14 text-black px-4 p-1 text-xl bg-[#b7a99a]">Add to cart</button>
+           <button className="rounded-3xl mt-14 text-black px-4 p-1 text-xl bg-[#b7a99a] mb-8">Add to cart</button>
            </div>
         </div>
       </div>
