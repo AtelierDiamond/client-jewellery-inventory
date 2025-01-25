@@ -4,14 +4,14 @@ import React from "react";
 import img1 from "@/components/images/single-page/bracelet.jpg";
 import img2 from "@/components/images/single-page/first.png";
 import img3 from "@/components/images/single-page/fourth.png";
-import { title } from "process";
+// import { title } from "process";
 import MetalType from "@/components/pages/JewellDetails/MetalType";
 import SizeSelectors from "@/components/pages/JewellDetails/SizeSelectors";
 import Selector from "@/components/common/Selector";
 
 const OPTIONS: EmblaOptionsType = {};
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+// const SLIDE_COUNT = 5;
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function page() {
   const SliderImage = [
