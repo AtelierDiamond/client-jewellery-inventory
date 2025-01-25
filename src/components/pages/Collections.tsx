@@ -30,6 +30,18 @@ function Collections() {
         { img: ring10, alt: 'ring10' },
         { img: ring11, alt: 'ring11' },
         { img: ring12, alt: 'ring12' },
+        { img: ring1, alt: 'ring1' },
+        { img: ring2, alt: 'ring2' },
+        { img: ring3, alt: 'ring3' },
+        { img: ring4, alt: 'ring4' },
+        { img: ring5, alt: 'ring5' },
+        { img: ring6, alt: 'ring6' },
+        { img: ring7, alt: 'ring7' },
+        { img: ring8, alt: 'ring8' },
+        { img: ring9, alt: 'ring9' },
+        { img: ring10, alt: 'ring10' },
+        { img: ring11, alt: 'ring11' },
+        { img: ring12, alt: 'ring12' },
     ];
 
     // const handlePriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -44,7 +56,7 @@ function Collections() {
     return (
         <>
             <div className="flex justify-between flex-col lg:flex-row my-8 m-10 relative">
-                <div className="w-full lg:w-1/4 space-y-8 mt-24">
+                <div className="w-full lg:w-1/4 space-y-8 mt-24 lg:fixed">
                     <div className="flex items-center gap-3">
                         <h3 className="text-2xl font-medium">Filter & Sort</h3>
                         <TbAdjustmentsHorizontal size={25} />
@@ -72,7 +84,7 @@ function Collections() {
                         </select>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20 lg:w-3/4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20 lg:w-3/4 lg:absolute lg:right-0">
                     {rings.map((item, index) => (
                         <div
                             key={index}
