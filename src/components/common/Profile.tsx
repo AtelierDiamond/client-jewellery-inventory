@@ -9,7 +9,7 @@ function Profile({customClass}: {customClass?: string}) {
         <div className={`flex justify-between items-center absolute w-full z-10 px-6`}>
             <div className='flex items-center w-1/2 md:w-auto'>
                 <div className='absolute ms-2 z-10  bg-[#B7A99A] rounded-full shadow-md cursor-pointer'>
-                    <FaSearch className="text-white cursor-pointer m-1" size={10} />
+                    <FaSearch className="text-white cursor-pointer m-1" size={12} />
                 </div>
                 <input
                     placeholder="Type"
