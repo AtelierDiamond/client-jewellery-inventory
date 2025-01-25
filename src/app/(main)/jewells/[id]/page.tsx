@@ -22,8 +22,8 @@ function page() {
 
   const metalType = [
     { id: 1, colorCode: "#ffffff", text: "14K", title: "White gold" },
-    { id: 1, colorCode: "#e5ce83", text: "", title: "Yellow gold" },
-    { id: 1, colorCode: "#e7ba9a", text: "", title: "Rose gold" },
+    { id: 2, colorCode: "#e5ce83", text: "", title: "Yellow gold" },
+    { id: 3, colorCode: "#e7ba9a", text: "", title: "Rose gold" },
   ];
 
   const sizes = [6,6.5,7,7.5];

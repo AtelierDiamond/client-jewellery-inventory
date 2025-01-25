@@ -51,13 +51,13 @@ function JewellsCategory() {
       <div className="flex justify-end gap-2 mb-4">
         <button
           onClick={scrollLeft}
-          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center ${scrollRef.current && scrollRef?.current?.offsetWidth>0}`}
+          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black ${scrollRef.current && scrollRef?.current?.offsetWidth>0}`}
         >
           <MdKeyboardArrowLeft size={25} />
         </button>
         <button
           onClick={scrollRight}
-          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center ${scrollRef.current && scrollRef?.current?.offsetWidth<0}`}
+          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black ${scrollRef.current && scrollRef?.current?.offsetWidth<0}`}
         >
           <MdKeyboardArrowRight size={25} />
         </button>
