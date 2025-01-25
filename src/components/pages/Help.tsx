@@ -18,7 +18,7 @@ function Help() {
     return (
         <div className="flex justify-center items-center bg-[#e8ecef] min-h-screen pt-20">
             <div className="w-full px-10">
-                <h2 className="text-2xl font-normal text-black my-2">FAQs</h2>
+                <h2 className="text-2xl font-medium text-black my-2">FAQs</h2>
                 <div className="space-y-4">
                     {faqList.map((item, index: number) => (
                         <div
@@ -30,7 +30,7 @@ function Help() {
                                 className="flex justify-between items-center cursor-pointer bg-white"
                                 onClick={() => toggleFAQ(index)}
                             >
-                                <h2 className="text-lg font-normal px-4 p-2">
+                                <h2 className="text-lg font-medium px-4 p-2">
                                     {item.question}
                                 </h2>
                                 <span className="px-2 text-xl">
