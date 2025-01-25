@@ -48,7 +48,7 @@ function Jewells() {
           {
                 items.map((item,index) => (
                     <Link  key={index}  href={`/jewells/${index}`}>
-                         <JewellsItemsCard 
+                    <JewellsItemsCard 
                     img={item.img} 
                     title={item.title} 
                     price={item.price}
