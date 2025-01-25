@@ -45,19 +45,19 @@ function JewellsCategory() {
 
   return (
     <div className="w-[98vw] p-4 mx-auto">
-      <h2 className="text-3xl text-black ">
+      <h2 className="text-3xl text-black font-medium">
         Categories
       </h2>
       <div className="flex justify-end gap-2 mb-4">
         <button
           onClick={scrollLeft}
-          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center ${scrollRef.current && scrollRef?.current?.offsetWidth>0}`}
+          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black ${scrollRef.current && scrollRef?.current?.offsetWidth>0}`}
         >
           <MdKeyboardArrowLeft size={25} />
         </button>
         <button
           onClick={scrollRight}
-          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center ${scrollRef.current && scrollRef?.current?.offsetWidth<0}`}
+          className={`rounded-md px-1 bg-[#e8ecef] text-[#999696] flex items-center justify-center hover:text-black ${scrollRef.current && scrollRef?.current?.offsetWidth<0}`}
         >
           <MdKeyboardArrowRight size={25} />
         </button>
@@ -80,7 +80,7 @@ function JewellsCategory() {
               />
             </Link>
           </div>
-            <h1 className="text-center text-sm mt-2 font-medium">{item.alt}</h1>
+            <h1 className="text-center text-md mt-2 font-medium">{item.alt}</h1>
          </div>
         ))}
       </div>

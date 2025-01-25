@@ -46,7 +46,7 @@ function Collections() {
             <div className="flex justify-between flex-col lg:flex-row my-8 m-10 relative">
                 <div className="w-full lg:w-1/4 space-y-8 mt-24">
                     <div className="flex items-center gap-3">
-                        <h3 className="text-2xl ">Filter & Sort</h3>
+                        <h3 className="text-2xl font-medium">Filter & Sort</h3>
                         <TbAdjustmentsHorizontal size={25} />
                     </div>
                     <div className="space-y-4">
@@ -58,7 +58,7 @@ function Collections() {
                         </div>
                     </div>
                     <div className="space-y-2">
-                        <h3 className="text-xl font-medium text-[#02373a]  rounded">Jewellery</h3>
+                        <h3 className="text-xl font-medium text-[#02373a] rounded">Jewellery</h3>
                         <select className="w-full h-10 border border-gray-300 bg-gray-100 rounded px-2">
                             <option className=''>Rings</option>
                             <option className=''>Bracelet</option>
@@ -66,7 +66,7 @@ function Collections() {
                         </select>
                     </div>
                     <div className="space-y-2">
-                        <h3 className="text-xl text-[#02373a]  rounded font-medium">Gold</h3>
+                        <h3 className="text-xl text-[#02373a] rounded font-medium">Gold</h3>
                         <select className="w-full h-10 border border-gray-300 bg-gray-100 rounded px-2">
                             <option className=''>All</option>
                         </select>

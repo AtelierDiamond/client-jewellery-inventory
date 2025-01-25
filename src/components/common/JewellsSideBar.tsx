@@ -11,7 +11,7 @@ function JewellsSideBar({
   return (
     <div className="md:w-[18%] border h-full relative hidden lg:block">
       <Image fill className="object-cover" src={img} alt={"title"} />
-      <div className="absolute w-full top-10 text-center">
+      <div className="absolute w-full top-10 text-center cursor-pointer">
         <span className="bg-[#ebe5df] p-2 rounded-xl">{title}</span>
       </div>
     </div>
