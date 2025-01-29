@@ -43,7 +43,7 @@ function Jewells() {
     return <div className="h-full flex">
         <JewellsSideBar img={handbracelet} title="Bracelet Collection" />
         <div className="w-1/2 h-full flex-1 overflow-y-scroll ">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-4 place-items-center space-y-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-4 place-items-center space-y-3 gap-1 xl:gap-0">
                 {
                     items.map((item, index) => (
                         <Link key={index} href={`/jewells/${index}`}>
