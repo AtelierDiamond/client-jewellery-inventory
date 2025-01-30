@@ -14,10 +14,10 @@ function Profile({customClass}: {customClass?: string}) {
                 <input
                     placeholder="Type"
                     type="text"
-                    className="relative focus:outline-none w-full shadow-md rounded-full text-center border border-[#B7A99A] placeholder:text-gray-500 text-md placeholder:text-md text-black px-3 py-1"
+                    className="relative focus:outline-none w-full shadow-md rounded-full cursor-pointer text-center border border-[#B7A99A] placeholder:text-gray-500 text-md placeholder:text-md text-black px-3 py-1"
                 />
             </div>
-            <div className='flex justify-between items-center bg-transparent rounded-md p-1 shadow-md m-3 px-2'>
+            <div className='flex justify-between items-center bg-transparent rounded-md p-1 shadow-md m-3 px-2 cursor-pointer'>
                 <Image src={profile} className='rounded-full w-10' alt='profile' />
                 <div>
                     <p className={`text-xs font-normal ${customClass}`}>Donna Stroupe</p>

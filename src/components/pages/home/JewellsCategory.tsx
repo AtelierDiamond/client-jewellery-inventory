@@ -45,7 +45,7 @@ function JewellsCategory() {
 
   return (
     <div className="w-[98vw] p-4 mx-auto">
-      <h2 className="text-3xl text-black font-medium">
+      <h2 className="text-3xl text-black font-medium cursor-pointer">
         Categories
       </h2>
       <div className="flex justify-end gap-2 mb-4">
@@ -80,7 +80,7 @@ function JewellsCategory() {
               />
             </Link>
           </div>
-            <h1 className="text-center text-md mt-2 font-medium">{item.alt}</h1>
+            <h1 className="text-center text-md mt-2 font-medium cursor-pointer">{item.alt}</h1>
          </div>
         ))}
       </div>

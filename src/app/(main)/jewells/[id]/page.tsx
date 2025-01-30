@@ -46,7 +46,7 @@ function page() {
       <div className="flex justify-center items-center">
         <ProductDetailSlider slides={SliderImage} options={OPTIONS} />
       </div>
-      <div className="bg-[#20403a] text-white md:mb-none">
+      <div className="bg-[#20403a] text-white md:mb-none cursor-pointer">
         <h1 className="text-xl text-center mt-10">
           14k Round Diamond Tennis Bracelet
         </h1>

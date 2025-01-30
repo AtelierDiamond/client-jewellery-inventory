@@ -16,7 +16,7 @@ function Help() {
         { question: 'What is the lead time for orders?', answer: '' },
     ]
     return (
-        <div className="flex justify-center items-center bg-[#e8ecef] min-h-screen pt-20">
+        <div className="flex justify-center items-center bg-[#e8ecef] min-h-screen pt-20 cursor-pointer">
             <div className="w-full px-10">
                 <h2 className="text-2xl font-medium text-black my-2">FAQs</h2>
                 <div className="space-y-4">
