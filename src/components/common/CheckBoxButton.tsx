@@ -16,7 +16,7 @@ function CheckBoxButton({
   return (
     <div className="relative pt-1">
       <input onChange={(e)=>{console.log(e)}} className="hidden peer" id={id} type={type ?? "checkbox"} value={value} />
-      <label className="border py-1 px-8 peer-checked:bg-[#ebe5df] peer-checked:text-black rounded-md" htmlFor={id}>{title}</label>
+      <label className="border py-1 px-5 xl:px-8 peer-checked:bg-[#ebe5df] peer-checked:text-black rounded-md" htmlFor={id}>{title}</label>
     </div>
   );
 }
